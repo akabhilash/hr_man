@@ -1,0 +1,45 @@
+
+>Reload the RVM
+rvm reload
+
+>Install Ruby 1.9.3-p125
+rvm install ruby-1.9.3-p125
+
+> List rubies to know what all versions of ruby you have
+rvm list rubies
+
+> Create a gemset for Rails 3.2
+rvm gemset create 'rails32'
+
+> Bind Ruby 1.9.3-p125 with that gemset 
+rvm ruby-1.9.3-p125@rails32
+
+> Install Rails
+gem install rails -v "=3.2"
+
+> List all rails versions
+gem list rails
+
+> Create Our Hr Man Project
+rails new hr_man
+
+> Create rvmrc file
+echo "rvm ruby-1.9.3-p125@rails32" > .rvmrc
+
+> Look at the Rails version
+rails -v
+
+> Look at the Ruby version
+ruby -v 
+
+> Do Bundle Install if you have not done that
+bundle install
+
+> Install the following if installer specifies you to install
+gem install coffee-script-source -v '1.2.0'
+
+> Start the Rails Server in port 4000
+rails s -p4000
+
+Now Get Ready for Code!!!!
+
